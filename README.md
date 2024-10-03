@@ -21,17 +21,19 @@ This tool can be used in several areas, including:
 
 ## How to Use It
 
+Remark: It is not possible to use the project urself with llm_comparator!
+
+# Section Main Loop
 1. **Setting Up Models**: Provide two machine learning models trained on different time periods.
 2. **Defining the Query**: Specify a root keyword for the topic of interest (e.g., "social media").
 3. **Configuring Parameters**:
    - Choose the depth of the hierarchy.
    - Define thresholds for detecting differences.
    - Select comparison methods (e.g., SBERT, LLM Comparator).
-4. **Running the Algorithm**:
-   - The system will generate hierarchical categories and compare text outputs from the two models.
-5. **Reviewing Results**:
-   - Explore the differences through the provided visualization tools (tree structure or treemap).
-6. **Interpreting Differences**: Understand shifts in trends, language, and framing based on the comparison output.
+4. **Running the Algorithm**: The system will generate hierarchical categories and compare text outputs from the two models.
+# Section Evaluation
+1. **Reviewing Results**: Explore the differences through the provided visualization tools (tree structure or treemap).
+2. **Interpreting Differences**: Understand shifts in trends, language, and framing based on the comparison output.
 
 
 ## Citation
@@ -42,6 +44,16 @@ This tool can be used in several areas, including:
   author={Fritsch, Reinhard and Jatowt, Adam},
   journal={},
   year={2024}
+}
+
+@inproceedings{kahng2024comparator,
+    title={{LLM Comparator}: Visual Analytics for Side-by-Side Evaluation of Large Language Models},
+    author={Kahng, Minsuk and Tenney, Ian and Pushkarna, Mahima and Liu, Michael Xieyang and Wexler, James and Reif, Emily and Kallarackal, Krystal and Chang, Minsuk and Terry, Michael and Dixon, Lucas},
+    booktitle={Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
+    year={2024},
+    publisher={ACM},
+    doi={10.1145/3613905.3650755},
+    url={https://arxiv.org/abs/2402.10524}
 }
 ```
 
